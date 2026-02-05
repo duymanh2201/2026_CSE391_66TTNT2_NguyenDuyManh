@@ -3,16 +3,12 @@ body {
     background: #efefef;
     margin: 0;
 }
-
-/* KHUNG LỚN */
 .main-box {
     width: 95%;
     margin: 20px auto;
     border: 1px solid #cfcfcf;
     background: #f8f8f8;
 }
-
-/* NAVBAR */
 .navbar {
     background: #1f2933;
     color: white;
@@ -21,7 +17,6 @@ body {
     justify-content: space-between;
     align-items: center;
 }
-
 .logo {
     font-size: 20px;
     font-weight: bold;
@@ -48,7 +43,6 @@ body {
     border: none;
 }
 
-/* CONTENT */
 .content {
     padding: 25px;
     background: white;
@@ -87,8 +81,6 @@ td {
     padding: 12px;
     border-bottom: 1px solid #ddd;
 }
-
-/* BUTTON */
 .edit {
     background: #ffc107;
     border: none;
