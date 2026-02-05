@@ -1,47 +1,202 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+
+<style>
+.container {
+    width: 700px;
+    margin: 20px auto;
+    border: 2px solid #999;
+    padding: 20px;
+    border-radius: 6px;
+}
+.form-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.form-row label {
+    width: 150px;
+}
+
+.form-row input,
+.form-row select,
+.form-row textarea {
+    flex: 1;
+}
+.group {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+</style>
+
 </head>
+
 <body>
-    <form>
-        <label for="EmployeeID">Employee ID</label>
-        <input type="text" id="EmployeeID" name="ID" value="9"><br><br>
+<div class="container">
+    <form action="#" method="post">
+
+        <h3>Basic Info</h3>
+        <hr>
+
+        <div class="form-row">
+            <label for="EmployeeID">Employee ID</label>
+            <input type="text" id="EmployeeID" name="ID" value="9">
+        </div>
+
+        <div class="form-row">
+            <label for="LastName">Last Name</label>
+            <input type="text" id="LastName" name="LastName" value="Dodsorth">
+        </div>
+
+        <div class="form-row">
+            <label for="FirstName">First Name</label>
+            <input type="text" id="FirstName" name="FirstName" value="Anne">
+        </div>
+
+        <div class="form-row">
+            <label>Gender</label>
+            
+            <div class="group">
+            <label><input type="radio" name="gender"> Male</label>
+            <label><input type="radio" name="gender"> Female</label>
+            <label><input type="radio" name="gender"> XXX</label>
+            <label><input type="radio" name="gender" checked> ZZZ</label>
+            </div>
+        </div>
+            
+
+        <div class="form-row">
+            <label for="Title">Title</label>
+            <input type="text" id="Title" name="Title" value="Sales Representative">
+        </div>
+
+        <div class="form-row">
+            <label for="Suffix">Suffix</label>
+            <input type="text" id="Suffix" name="Suffix" value="Ms.">
+        </div>
+
+        <div class="form-row">
+            <label for="Birthdate">Birthdate</label>
+            <input type="text" id="Birthdate" name="date" value="1969-07-02 00:00:00">
+        </div>
+
+        <div class="form-row">
+            <label for="Hiredate">Hiredate</label>
+            <input type="text" id="Hiredate" name="date" value="1994-11-15 00:00:00">
+        </div>
+
+        <div class="form-row">
+            <label for="SSN">SSN #(if applicable)</label>
+            <input type="password" id="SSN" name="SSN">
+        </div>
+
+        <div class="form-row">
+            <label for="report">Reports To</label>
+            <select id="report" name="report_to">
+                <option value="buchanan">Buchanan</option>
+            </select>
+        </div>
+
+    
+        <h3>Contact Info</h3>
+        <hr>
+
+        <div class="form-row">
+            <label for="Email">Email</label>
+            <input type="email" id="Email" name="email" placeholder="name@example.com">
+        </div>
+
+        <div class="form-row">
+            <label for="Address">Address</label>
+            <input type="text" id="Address" name="Address" value="7 Houndstooth Rd.">
+        </div>
+
+        <div class="form-row">
+            <label for="City">City</label>
+            <input type="text" id="City" name="City" value="London">
+        </div>
+
+        <div class="form-row">
+            <label for="Region">Region</label>
+            <input type="text" id="Region" name="Region">
+        </div>
+
+        <div class="form-row">
+            <label for="Postal">Postal code</label>
+            <input type="text" id="Postal" name="Postal" value="WG2 7LT">
+        </div>
+
+        <div class="form-row">
+            <label for="Country">Country</label>
+            <select id="Country" name="country">
+                <option value="russia">Russian Federation</option>
+            </select>
+        </div>
+
+        <div class="form-row">
+            <label for="Phone">US Home Phone</label>
+            <input type="tel" id="Phone" name="Phone" value="(234)234-2342">
+        </div>
+
+        <div class="form-row">
+            <label for="Photo">Photo</label>
+            <input type="text" id="Photo" name="Photo" value="EmpID9.bmg">
+        </div>
+
+
+        <h3>Optional Info</h3>
+        <hr>
+
+        <div class="form-row">
+            <label for="notes">Notes</label>
+            <textarea id="notes" name="notes" rows="6">
+            Anne has a BA degree in English from St. Lawrence College.
+            She is fluent in French and German.
+            </textarea>
+        </div>
+
+        <div class="form-row">
+            <label>Preferred Shift</label>
+            <div class="group">
+                <label><input type="checkbox" name="shift"> Regular</label>
+                <label><input type="checkbox" name="shift" checked> Grave Yard</label>
+            </div>    
+        </div>
+
+        <div class="form-row">
+            <label for="active">Active</label>
+            <input type="checkbox" id="active" name="active" checked>
+        </div>
+
+        <div class="form-row">
+            <label>Are you human?</label>
         
-        <label for="LastName">Last Name</label>
-        <input type="text" id="LastName" name="LastName" value="Dodsorth"><br><br>
+            <div>
+                <div>
+                    <strong style="font-size:22px; letter-spacing:4px;">TIDAWO</strong><br>
+                    <span style="margin-left:10px;">Click to change</span>
+                </div>
+                <br>
+                <input type="text" name="captcha" style="margin-top:6px;">
+            </div>
+        </div>
         
-        <label for="FirstName">First Name</label>
-        <input type="text" id="FirstName" name="FirstName" value="Anne"><br><br>
 
-        <label>Gender</label><br>
-        <input type="radio" id="Male" name="gender">
-        <label for="Male">Male</label><br>
-        <input type="radio" id="Female" name="gender">
-        <label for="Female">Female</label><br>
-        <input type="radio" id="XXX" name="gender">
-        <label for="XXX">XXX</label><br>
-        <input type="radio" id="ZZZ" name="gender" checked>
-        <label for="ZZZ">ZZZ</label><br><br>
+        <div class="form-row">
+            <label></label>
+        <div>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Cancel">
+        </div>
+        </div>
 
-        <label for="Title">Title</label>
-        <input type="text" id=Title name="Title" value="Sales Representative"><br><br>
-
-        <label for="Suffix">Suffix</label>
-        <input type="text" id="Suffix" name="Suffix" value="Ms."><br><br>
-
-        <label for="Birthdate">Birthdate</label>
-        <input type="datetime-local" id="Birthdate" name="date" value="1969-07-02T00:00"><br><br>
-
-        <label for="report">Reports To</label>
-        <select id="report" name="report_to">
-            <option>Buchanan</option>
-            <option>Fuller</option>
-            <option>Leverling</option>
-        </select><br><br>
-        <input type="Submit" value="Submit">
     </form>
+</div>
 </body>
 </html>
