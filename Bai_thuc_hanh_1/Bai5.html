@@ -2,10 +2,160 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>HR Management</title>
+    <link rel="stylesheet" href="Bai5.css">
 </head>
 <body>
-    
+
+<div class="main-box">
+
+    <!-- NAVBAR nằm trong khung -->
+    <div class="navbar">
+        <div class="nav-left">
+            <span class="logo">HR Management</span>
+            <a href="#">Home</a>
+            <a href="#">Contact</a>
+        </div>
+
+        <div class="nav-right">
+            <input type="text" placeholder="Search...">
+            <button>Search</button>
+        </div>
+    </div>
+
+    <!-- CONTENT -->
+    <div class="content">
+
+        <div class="header-row">
+            <h2>Employee</h2>
+            <button class="btn-add">+ Add</button>
+        </div>
+
+        <table>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Position</th>
+                <th>Action</th>
+            </tr>
+
+            <tr>
+                <td>1</td>
+                <td>Fatima Beatriz</td>
+                <td>Fatima@gmail.com</td>
+                <td>0985674321</td>
+                <td>Staff</td>
+                <td>
+                    <button class="edit">Edit</button>
+                    <button class="delete">Delete</button>
+                </td>
+            </tr>
+
+            <tr>
+                <td>2</td>
+                <td>Gabriel Hanna</td>
+                <td>Gabriel@gmail.com</td>
+                <td>0353674231</td>
+                <td>Staff</td>
+                <td>
+                    <button class="edit">Edit</button>
+                    <button class="delete">Delete</button>
+                </td>
+            </tr>
+
+            <tr>
+                <td>3</td>
+                <td>Charles Diya</td>
+                <td>Charles@gmail.com</td>
+                <td>0347658833</td>
+                <td>Staff</td>
+                <td>
+                    <button class="edit">Edit</button>
+                    <button class="delete">Delete</button>
+                </td>
+            </tr>
+
+            <tr>
+                <td>4</td>
+                <td>Frank Lamdo</td>
+                <td>Frank@gmail.com</td>
+                <td>0975444768</td>
+                <td>Manager</td>
+                <td>
+                    <button class="edit">Edit</button>
+                    <button class="delete">Delete</button>
+                </td>
+            </tr>
+
+            <tr>
+                <td>5</td>
+                <td>Louis Tom</td>
+                <td>Louis@gmail.com</td>
+                <td>0789568223</td>
+                <td>Staff</td>
+                <td>
+                    <button class="edit">Edit</button>
+                    <button class="delete">Delete</button>
+                </td>
+            </tr>
+
+        </table>
+
+    </div>
+
+</div>
+<div class="modal">
+    <div class="modal-header">
+        New Employee
+        <span class="close">×</span>
+    </div>
+
+    <div class="modal-body">
+
+        <div class="form-row">
+            <div>
+                <label>Name</label>
+                <input type="text">
+            </div>
+
+            <div>
+                <label>Email</label>
+                <input type="email">
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div>
+                <label>Phone</label>
+                <input type="text">
+            </div>
+
+            <div>
+                <label>Position</label>
+                <select>
+                    <option>-- Select Position --</option>
+                    <option>Staff</option>
+                    <option>Manager</option>
+                    <option>CEO</option>
+                </select>
+            </div>
+        </div>
+        <div class="sex-row">
+            <label>Sex</label>
+            <input type="radio" name="sex"> Male
+            <input type="radio" name="sex"> Female
+        </div>
+
+        <div class="modal-buttons">
+            <button class="save">Save</button>
+            <button class="cancel">Cancel</button>
+        </div>
+
+    </div>
+</div>
+
+
 </body>
 </html>
