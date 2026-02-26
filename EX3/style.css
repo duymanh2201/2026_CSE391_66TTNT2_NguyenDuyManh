@@ -1,0 +1,82 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #eeeeee;
+    padding: 60px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+    background: #f5f5f5;
+    border: 2px solid #6bb6d6;
+    padding: 80px 70px;
+}
+
+.title {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 400;
+    margin-bottom: 80px;
+    letter-spacing: 1px;
+    line-height: 1.4;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+}
+
+.card {
+    width: 320px;
+    background: #ffffff;
+    padding: 45px 35px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.06);
+}
+
+.card h3 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    line-height: 1.4;
+}
+
+.card p {
+    font-size: 14px;
+    color: #777;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+.card span {
+    color: rgb(67, 187, 234);
+}
+
+.name {
+    font-weight: bold;
+}
+
+.job {
+    color: #3ba4db;
+    font-size: 14px;
+}
+
+.text {
+    max-width: 500px;
+}
+
+.text p {
+    margin-bottom: 25px;
+    line-height: 1.7;
+    color: #666;
+}
+
+.text .bold {
+    font-weight: bold;
+    color: #444;
+}
