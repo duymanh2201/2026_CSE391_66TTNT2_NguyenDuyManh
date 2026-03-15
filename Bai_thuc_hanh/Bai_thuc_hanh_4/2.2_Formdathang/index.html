@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>Form đặt hàng</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h2 class="title">Đặt hàng trực tuyến</h2>
+
+    <form id="orderForm">
+
+    <div>
+        <label>Tên sản phẩm</label><br>
+        <select id="product">
+            <option value="">-- Chọn sản phẩm --</option>
+            <option value="Áo">Áo</option>
+            <option value="Quần">Quần</option>
+            <option value="Giày">Giày</option>
+        </select>
+        <div class="error" id="productError"></div>
+    </div>
+
+    <div>
+        <label>Số lượng</label><br>
+        <input type="number" id="quantity">
+        <div class="error" id="quantityError"></div>
+    </div>
+
+    <div>
+        <label>Ngày giao hàng</label><br>
+        <input type="date" id="date">
+        <div class="error" id="dateError"></div>
+    </div>
+
+    <div>
+        <label>Địa chỉ giao</label><br>
+        <input type="text" id="address">
+        <div class="error" id="addressError"></div>
+    </div>
+
+    <div>
+        <label>Ghi chú</label><br>
+        <textarea id="note"></textarea>
+        <div id="count">0/200</div>
+        <div class="error" id="noteError"></div>
+    </div>
+
+    <div>
+        <label>Thanh toán</label><br>
+        <input type="radio" name="pay" value="COD"> COD
+        <input type="radio" name="pay" value="Bank"> Chuyển khoản
+        <input type="radio" name="pay" value="Wallet"> Ví điện tử
+        <div class="error" id="payError"></div>
+    </div>
+
+    <div>
+        <b>Tổng tiền:</b> <span id="total">0</span> VNĐ
+    </div>
+
+    <br>
+    <button type="submit">Đặt hàng</button>
+
+    </form>
+
+    <div id="confirmBox" style="display:none">
+        <h3>Xác nhận đơn hàng</h3>
+        <p id="summary"></p>
+
+        <button id="confirmBtn">Xác nhận</button>
+        <button id="cancelBtn">Hủy</button>
+    </div>
+
+    <h3 id="success"></h3>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
