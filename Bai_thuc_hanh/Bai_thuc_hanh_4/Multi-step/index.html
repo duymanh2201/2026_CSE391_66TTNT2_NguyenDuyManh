@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>Multi Step Form</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<form id="form">
+  <div class="progress">
+    <div id="progressBar"></div>
+  </div>
+
+  <div class="step active">
+    <h2>Bước 1: Thông tin cá nhân</h2>
+
+    <input type="text" id="fullname" placeholder="Họ tên">
+    <div class="error" id="fullnameError"></div>
+
+    <input type="date" id="dob">
+    <div class="error" id="dobError"></div>
+
+    <select id="gender">
+      <option value="">Chọn giới tính</option>
+      <option>Nam</option>
+      <option>Nữ</option>
+    </select>
+    <div class="error" id="genderError"></div>
+
+    <button type="button" onclick="nextStep()">Tiếp theo</button>
+  </div>
+
+  <div class="step">
+    <h2>Bước 2: Tài khoản</h2>
+
+    <input type="email" id="email" placeholder="Email">
+    <div class="error" id="emailError"></div>
+
+    <input type="password" id="password" placeholder="Mật khẩu">
+    <div class="error" id="passwordError"></div>
+
+    <input type="password" id="confirm" placeholder="Xác nhận mật khẩu">
+    <div class="error" id="confirmError"></div>
+
+    <button type="button" onclick="prevStep()">Quay lại</button>
+    <button type="button" onclick="nextStep()">Tiếp theo</button>
+  </div>
+
+  <div class="step">
+    <h2>Bước 3: Xác nhận</h2>
+
+    <div id="result"></div>
+
+    <button type="button" onclick="prevStep()">Quay lại</button>
+    <button type="submit">Đăng ký</button>
+  </div>
+
+</form>
+
+<script src="script.js"></script>
+</body>
+</html>

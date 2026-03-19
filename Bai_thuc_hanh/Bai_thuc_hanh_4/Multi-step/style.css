@@ -1,0 +1,43 @@
+body {
+    font-family: Arial;
+    max-width: 400px;
+    margin: auto;
+  }
+  
+  .step {
+    display: none;
+  }
+  
+  .step.active {
+    display: block;
+  }
+  
+  input, select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 10px;
+  }
+  
+  button {
+    margin-top: 15px;
+    padding: 8px 12px;
+  }
+  
+  .error {
+    color: red;
+    font-size: 13px;
+  }
+  
+  /* Progress bar */
+  .progress {
+    height: 8px;
+    background: #ddd;
+    margin-bottom: 20px;
+  }
+  
+  #progressBar {
+    height: 100%;
+    width: 33%;
+    background: green;
+    transition: 0.3s;
+  }
